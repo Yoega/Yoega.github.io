@@ -167,3 +167,67 @@ ul {
     padding-top:20px;
     background-color: #262626
 }
+
+@media (max-width: 800px) {
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home-cards a {
+        margin-bottom: 20px;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5
+    }
+
+    .main-nav ul.right-menu {
+        margin-right: 50px;
+    }
+
+    .menu-btn {
+        cursor: pointer;
+        position: absolute;
+    /* z-index makes sense only the attribute position is relative, absolute, or fixed. */
+        z-index: 2;
+    }
+
+    .main-nav ul.main-menu {
+        display: block;
+        font-style: italic;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 30%;
+        height: 100%;
+        /* make the menue move to the left */
+        transform: translateX(-700px);
+        /* adjust the speed the window pops in and pops out */
+        transition: transform 0.8s ease-in-out;
+        border-right: #3e4d51 1px solid;
+        opacity: 0.9;
+        padding-top: 20px;
+    }
+
+    .main-nav ul.main-menu.show {
+        /* dynamicly pop out the window */
+        transform: translate(-15px);
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #b2adad solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+    
+}
