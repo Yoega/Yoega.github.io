@@ -611,7 +611,7 @@ html {
 .fixed-profile {
     position: fixed;
     top: 50px;
-    left: 60px;
+    left: 10px;
     width: 220px; /* Adjust as needed */
     padding: 15px;
     background: white;
