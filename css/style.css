@@ -465,6 +465,9 @@ ul {
 @media (max-width: 500px) {
     .home-cards {
         grid-template-columns: 1fr;
+    };
+     .fixed-profile {
+        display: none;
     }
     
 }
