@@ -311,6 +311,13 @@ ul {
     }
 }
 
+/* Hide profile when screen width is less than 500px */
+@media screen and (max-width: 1500px) {
+    .fixed-profile {
+        display: none;
+    }
+}
+
 /* Button */
 .showcase .btn {
     margin-top: 20px;
