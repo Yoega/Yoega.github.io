@@ -6,63 +6,158 @@
 	<title>Yoega's HomePage</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<!-- Swiper Styles -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	
 </head>
 <body>
+	
+	<!-- Swiper Script -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+	<!-- Menu Button -->
+	<script src="script.js"></script>
+
 	<div class="menu-btn">
 		<i class="fas fa-bars fa-2x"></i>
 	</div>
+
+
+	<!-- Profile Section (Fixed at Top Left) -->
+	<div class="fixed-profile">
+		<img src="pics/profile.jpg" alt="Yongjia LEI">
+		<h2>Yongjia LEI</h2>
+		<p>she/her</p>
+		<p>A beginner.</p>
+		<ul class="about-links">
+			<li><i class="fas fa-map-marker-alt"></i> Eugene, Oregon</li>
+			<li><i class="fas fa-university"></i> University of Oregon</li>
+			<li>
+				<i class="fas fa-envelope"></i> 
+				<a href="mailto:yongjia@uoregon.edu">Email</a>
+			</li>
+			<li>
+				<i class="fas fa-graduation-cap"></i>
+				<a href="https://scholar.google.com/citations?user=yn0jZg4AAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+			</li>
+			<li>
+				<i class="fab fa-linkedin"></i>
+				<a href="https://www.linkedin.com/in/yongjia-lei-2057ba342" target="_blank">LinkedIn</a>
+			</li>
+			<li>
+				<i class="fab fa-github"></i>
+				<a href="https://github.com/Yoega" target="_blank">Github</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<!-- Comment Section -->
+	<div id="comment-section">
+		<button id="close-comment">&times;</button> <!-- Close Button -->
+		<textarea id="comment-box" placeholder="Write your comment..."></textarea>
+		<button id="submit-comment">submit</button>
+		<ul id="comment-list"></ul>
+	</div>
+
 	<div class="container">
 		<!--Nav-->
 		<nav class="main-nav">
 			<img src="pics/logo.jpg" alt="Profile" class="logo">
 
 			<ul class="main-menu">
-				<li><a href="https://scholar.google.com/citations?user=yn0jZg4AAAAJ&hl=zh-CN">Academic-Profile</a></li>
-				<li><a href="https://www.jnu.edu.cn/main.htm">School</a></li>
-				<li><a href="https://www.sciencedirect.com/science/article/pii/S1568494623007019?casa_token=3ORwm4_SNcEAAAAA:_qBHiPvJtsUWpVlFwsAT6SAlEow4svaZPFS3dAOflEHXXGRkGAAdmfEZHRIHmWoANH24WfO2-LD9">Research</a></li>
+				<li><a href="https://scholar.google.com/citations?user=yn0jZg4AAAAJ&hl=zh-CN">Google Scholar</a></li>
+				<li><a href="https://www.uoregon.edu/">School</a></li>
 				<li><a href="https://github.com/Yoega">GitHub</a></li>
+				<li><a href="https://kindlab-fly.github.io/">KIND Lab</a></li>
 			</ul>
 			
-			<ul class="right-menue">
+			<ul class="right-menu">
 				<li>
-					<a href="#">
-						<i class="fas fa-search"></i>
+					<a href="#" id="comment-icon">
+						<i class="fas fa-comment"></i> Leave a Comment
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#" id="heart-icon">
 						<i class="fas fa-heart"></i>
+						<span id="heart-count">0</span>
 					</a>
 				</li>
-			</ul>
+			</ul>			
 		</nav>
 
-		<!-- Showcase -->
+
+		<!-- Showcase
 		<header class="showcase">
-			<h2>Research Progress</h2>
+			<h2></h2>
 			<p>
-				Diabetic Retinopathy Detction with CapsNet & GNN
+				I graduated! 🎉 🎉 🎉
 			</p>
-			<a href="#" class="btn">
-				recent research <i class="fas fa-chevron-right"></i>
+			<a href="graduation/photo_wall.html" class="btn">
+				see more <i class="fas fa-chevron-right"></i>
 			</a>
-		</header>
+		</header> -->
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- Slide 1 -->
+				<div class="swiper-slide">
+					<div class="slide-content">
+						<h2>🥳🤩😊 Ph.D. life in UO</h2>
+						<p>Another beautiful journey just started.</p>
+					</div>
+					<img src="css/background_pics/school_uo.jpg" alt="">
+				</div>
+		
+				<!-- Slide 2 -->
+				<div class="swiper-slide">
+					<img src="css/background_pics/news_cover.JPEG" alt="">
+					<div class="slide-content">
+						<h2>I graduated! 🎉 🎉 🎉</h2>
+						<p>A wonderful journey in computer science.</p>
+						<a href="graduation/photo_wall.html" class="btn">See more</a>
+					</div>
+				</div>
+
+		
+				<!-- Slide 3 -->
+				<div class="swiper-slide">
+					<div class="slide-content">
+						<h2>Sunrise</h2>
+						<p>A life moment.</p>
+						
+					</div>
+					<img src="css/background_pics/sunrise.jpg" alt="">
+				</div>
+			</div>
+		
+			<!-- Pagination (Dots) -->
+			<div class="swiper-pagination"></div>
+		
+			<!-- Navigation Buttons -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		
+
+
 
 		<!-- Homw cards 1-->
 		<section class="home-cards">
 			<div>
-				<img src="pics/profie.jpg" alt="">
+				<img src="pics/profile.jpg" alt="">
 				<h3>
 					Personal Information
 				</h3>
 				<p>
-					Hi~ I'm Yongjia Lei.
+					About me.
 				</p>
-				<a href="#">Learn More <i class="fas fa-chevron-right"></i></fa-chevron-right></i></a>
+				<a href="#about-me">Learn More <i class="fas fa-chevron-right"></i></fa-chevron-right></i></a>
 			</div>
 			<div>
-				<img src="pics/school2.jpg" alt="">
+				<img src="pics/school.jpg" alt="">
 				<h3>
 					Capmpus Life
 				</h3>
@@ -93,19 +188,86 @@
 			</div>
 		</section>
 
-		<!-- !Xbox -->
-		<section class="Xbox">
-			<div class="content">
-				<h2>
-					Assignments
-				</h2>
-				<p>Click to see all the assigned projects</p>
-				<a href="Hands-On-Projects/Chap2-project1/Chapter2-Project1.html" class="btn"><i class="fas fa-tag"></i> Project1</a>
-				<a href="Hands-On-Projects/Chap2-project2/Chapter2-Project2.html" class="btn"><i class="fas fa-tag"></i>Project2</a>
-				<a href="Hands-On-Projects/Chap3-project1/Chapter3-Project1.html" class="btn"><i class="fas fa-tag"></i>Project3</a>
-				<a href="Hands-On-Projects/Chap3-project2/Chapter3-Project2.html" class="btn"><i class="fas fa-tag"></i>Project4</a>
+	<!-- !News Outline -->
+	<section class="news">
+		<div class="content">
+			<h2>🌏News</h2>
+			
+			<!-- News List -->
+			<ul class="news-list">
+				<!-- News Item 1 -->
+				<li>
+					<a href="#" class="news-link">
+						<h3>[2025.02.28]🎉Yongjia received the SDM25 Student Travel Award.</h3>
+					</a>
+				</li>
+				
+				<!-- News Item 2 -->
+				<li>
+					<a href="https://arxiv.org/pdf/2502.20317" class="news-link">
+						<h3>[2025.02.27]🎉Our paper "Mixture of Structural-and-Textual Retrieval over Text-rich Graph Knowledge Bases" is available on arXiv.</h3>
+						<p>Click to check out the paper.</p>
+					</a>
+				</li>
+				
+				<!-- News Item 3 -->
+				<li>
+					<a href="https://arxiv.org/pdf/2502.11371" class="news-link">
+						<h3>[2025.02.17]🎉Our paper "RAG vs. GraphRAG: A Systematic Evaluation and Key Insights" is available on arXiv.</h3>
+						<p>Click to check out the paper.</p>
+					</a>
+				</li>
+				
+				<!-- News Item 4 -->
+				<li>
+					<a href="https://arxiv.org/pdf/2502.06872" class="news-link">
+						<h3>[2025.02.08]🎉Our paper "Towards Trustworthy Retrieval Augmented Generation for Large Language Models: A Survey" is available on arXiv.</h3>
+						<p>Click to check out the paper.</p>
+					</a>
+				</li>
+
+				<!-- News Item 5 -->
+				<li>
+					<a href="https://arxiv.org/pdf/2501.00309" class="news-link">
+						<h3>[2025.12.31]🎉Our paper "Retrieval-Augmented Generation with Graphs (GraphRAG)" is available on arXiv.</h3>
+						<p>Click to check out the paper.</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- About Me Section -->
+	<section id="about-me" class="about-me">
+		<div class="about-container">
+
+
+			<div class="about-content">
+				<h2>About me</h2>
+				<p>
+					My name is Yongjia LEI (雷永嘉). I am a first-year Ph.D. student at 
+					<a href="https://www.uoregon.edu/">Univeristy of Oregon</a>, majoring in 
+					<strong>Computer Science</strong>. My research interests include 
+					Neuro-Symbolic Reasoning and Planning, Graph Retrieval-Augmented Generation, Graph Machine Learning, and Information Retrieval.
+				</p>
+
+				<p>
+					My Ph.D. advisor is <a href="https://yuwang0103.github.io/">Prof. Yu Wang</a> at the <a href="https://kindlab-fly.github.io/">KIND Lab</a>, 
+					<a href="https://scds.uoregon.edu/">School of Computer and Data Sciences</a>,  
+					<a href="https://www.uoregon.edu/">University of Oregon</a>.
+				</p>
+
+				<p>
+					Beyond research, I have a deep passion for photography and reading. 
+					I also enjoy playing drums and singing, as well as engaging in sports like volleyball and orienteering.
+
+
+				</p>
+
+				<p>Feel free to reach me at <a href="mailto:yongjia@uoregon.edu">yongjia@uoregon.edu</a>.</p>
 			</div>
-		</section>
+		</div>
+	</section>
 		
 	</div>
 	<script>
