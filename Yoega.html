@@ -8,9 +8,12 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- Swiper Styles -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 	
 </head>
+
 <body>
+    
 	
 	<!-- Swiper Script -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -19,9 +22,7 @@
 	<!-- Menu Button -->
 	<script src="script.js"></script>
 
-	<div class="menu-btn">
-		<i class="fas fa-bars fa-2x"></i>
-	</div>
+	
 
 
 	<!-- Profile Section (Fixed at Top Left) -->
@@ -52,6 +53,36 @@
 		</ul>
 	</div>
 
+	<!--Nav-->
+	<div class="main-nav">
+		<div class="menu-btn">
+			<i class="fas fa-bars fa-2x"></i>
+		</div>
+		<img src="pics/logo.jpg" alt="Profile" class="logo">
+
+		<ul class="main-menu">
+			<!-- <li><a href="https://scholar.google.com/citations?user=yn0jZg4AAAAJ&hl=zh-CN">Google Scholar</a></li> -->
+			<li><a href="#about-me">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#publications">Publications</a></li>
+			<li><a href="https://kindlab-fly.github.io/">KIND Lab</a></li>
+			<li><a href="artslilfe.html">Rec.</a></li>
+		</ul>
+		
+		<ul class="right-menu">
+			<li>
+				<a href="#" id="comment-icon">
+					<i class="fas fa-comment"></i> Leave a Comment
+				</a>
+			</li>
+			<li>
+				<a href="#" id="heart-icon">
+					<i class="fas fa-heart"></i>
+					<span id="heart-count">0</span>
+				</a>
+			</li>
+		</ul>			
+	</div>
 
 	<!-- Comment Section -->
 	<div id="comment-section">
@@ -61,32 +92,10 @@
 		<ul id="comment-list"></ul>
 	</div>
 
-	<div class="container">
-		<!--Nav-->
-		<nav class="main-nav">
-			<img src="pics/logo.jpg" alt="Profile" class="logo">
 
-			<ul class="main-menu">
-				<li><a href="https://scholar.google.com/citations?user=yn0jZg4AAAAJ&hl=zh-CN">Google Scholar</a></li>
-				<li><a href="https://www.uoregon.edu/">School</a></li>
-				<li><a href="https://github.com/Yoega">GitHub</a></li>
-				<li><a href="https://kindlab-fly.github.io/">KIND Lab</a></li>
-			</ul>
-			
-			<ul class="right-menu">
-				<li>
-					<a href="#" id="comment-icon">
-						<i class="fas fa-comment"></i> Leave a Comment
-					</a>
-				</li>
-				<li>
-					<a href="#" id="heart-icon">
-						<i class="fas fa-heart"></i>
-						<span id="heart-count">0</span>
-					</a>
-				</li>
-			</ul>			
-		</nav>
+
+	<div class="container">
+
 
 
 		<!-- Showcase
@@ -141,57 +150,45 @@
 			<div class="swiper-button-prev"></div>
 		</div>
 		
+	<!-- About Me Section -->
+	<section id="about-me" class="about-me">
+		
+		<!-- About Me Content -->
+		<div class="about-content">
+			<h2 class="title">About me</h2>
 
+			<p>
+				My name is Yongjia LEI (雷永嘉). I am a first-year Ph.D. student at 
+				<a href="https://www.uoregon.edu/">University of Oregon</a>, majoring in 
+				<strong>Computer Science</strong>. My research interests include 
+				Neuro-Symbolic Reasoning and Planning, Graph Retrieval-Augmented Generation, Graph Machine Learning, and Information Retrieval.
+			</p>
 
+			<p>
+				My Ph.D. advisor is <a href="https://yuwang0103.github.io/">Prof. Yu Wang</a> at the <a href="https://kindlab-fly.github.io/">KIND Lab</a>, 
+				<a href="https://scds.uoregon.edu/">School of Computer and Data Sciences</a>,  
+				<a href="https://www.uoregon.edu/">University of Oregon</a>.
+			</p>
 
-		<!-- Homw cards 1-->
-		<section class="home-cards">
-			<div>
-				<img src="pics/profile.jpg" alt="">
-				<h3>
-					Personal Information
-				</h3>
-				<p>
-					About me.
-				</p>
-				<a href="#about-me">Learn More <i class="fas fa-chevron-right"></i></fa-chevron-right></i></a>
-			</div>
-			<div>
-				<img src="pics/school.jpg" alt="">
-				<h3>
-					Capmpus Life
-				</h3>
-				<p>
-					Scenery & People
-				</p>
-				<a href="#">Learn More <i class="fas fa-chevron-right"></i></fa-chevron-right></i></a>
-			</div>
-			<div>
-				<img src="pics/music2.jpg" alt="">
-				<h3>
-					Musical Preferences
-				</h3>
-				<p>
-					Musicians & Songs
-				</p>
-				<a href="#">Learn More <i class="fas fa-chevron-right"></i></fa-chevron-right></i></a>
-			</div>
-			<div>
-				<img src="pics/art2.jpg" alt="">
-				<h3>
-					Artistic Preferences
-				</h3>
-				<p>
-					Artists & Paintings
-				</p>
-				<a href="#">Learn More <i class="fas fa-chevron-right"></i></fa-chevron-right></i></a>
-			</div>
-		</section>
+			<p>
+				Beyond research, I have a deep passion for photography and reading. 
+				I also enjoy playing drums and singing, as well as engaging in sports like volleyball and orienteering.
+			</p>
+
+			<p>Feel free to reach me at <a href="mailto:yongjia@uoregon.edu">yongjia@uoregon.edu</a>.</p>
+
+			<!-- Last Commit Badge -->
+			<span class="badge">last commit <span class="highlight">March</span></span>
+		</div>
+		
+	</section>
+
 
 	<!-- !News Outline -->
-	<section class="news">
+	<section id="news" class="news">
 		<div class="content">
-			<h2>🌏News</h2>
+			<h2>🌏 News</h2>
+			<hr>
 			
 			<!-- News List -->
 			<ul class="news-list">
@@ -237,39 +234,64 @@
 		</div>
 	</section>
 
-	<!-- About Me Section -->
-	<section id="about-me" class="about-me">
-		<div class="about-container">
+
+	<!-- Publications Section -->
+	<section id="publications" class="publications">
+		<h2>📖 Publications</h2>
+		<hr>
+
+		<h3>Author & Co-Author</h3>
+		<ul class="publication-list">
 
 
-			<div class="about-content">
-				<h2>About me</h2>
-				<p>
-					My name is Yongjia LEI (雷永嘉). I am a first-year Ph.D. student at 
-					<a href="https://www.uoregon.edu/">Univeristy of Oregon</a>, majoring in 
-					<strong>Computer Science</strong>. My research interests include 
-					Neuro-Symbolic Reasoning and Planning, Graph Retrieval-Augmented Generation, Graph Machine Learning, and Information Retrieval.
-				</p>
+			<li>
+				<strong>Mixture of Structural-and-Textual Retrieval over Text-rich Graph Knowledge Bases</strong> 
+				In <a href="https://arxiv.org/pdf/2502.20317" target="_blank">arxiv</a>.
+				<br><b>Yongjia Lei</b>, Haoyu Han, Ryan A Rossi, Franck Dernoncourt, Nedim Lipka, Mahantesh M Halappanavar, Jiliang Tang, Yu Wang
+			</li>
 
-				<p>
-					My Ph.D. advisor is <a href="https://yuwang0103.github.io/">Prof. Yu Wang</a> at the <a href="https://kindlab-fly.github.io/">KIND Lab</a>, 
-					<a href="https://scds.uoregon.edu/">School of Computer and Data Sciences</a>,  
-					<a href="https://www.uoregon.edu/">University of Oregon</a>.
-				</p>
+			<li>
+				<strong>RAG vs. GraphRAG: A Systematic Evaluation and Key Insights</strong> 
+				In <a href="https://arxiv.org/pdf/2502.11371" target="_blank">arxiv</a>.
+				<br>Haoyu Han, Harry Shomer, Yu Wang, <b>Yongjia Lei</b>, Kai Guo, Zhigang Hua, Bo Long, Hui Liu, Jiliang Tang
+			</li>
 
-				<p>
-					Beyond research, I have a deep passion for photography and reading. 
-					I also enjoy playing drums and singing, as well as engaging in sports like volleyball and orienteering.
+			<li>
+				<strong>Towards Trustworthy Retrieval Augmented Generation for Large Language Models: A Survey</strong> 
+				In <a href="https://arxiv.org/pdf/2502.06872" target="_blank">arxiv</a>.
+				<br>Bo Ni, Zheyuan Liu, Leyao Wang, <b>Yongjia Lei</b>, Yuying Zhao, Xueqi Cheng, Qingkai Zeng, Luna Dong, Yinglong Xia, Krishnaram Kenthapadi, Ryan Rossi, Franck Dernoncourt, Md Mehrab Tanjim, Nesreen Ahmed, Xiaorui Liu, Wenqi Fan, Erik Blasch, Yu Wang, Meng Jiang, Tyler Derr
+			</li>
 
+			<li>
+				<strong>Retrieval-augmented generation with graphs (graphrag)</strong> 
+				In <a href="https://arxiv.org/pdf/2501.00309" target="_blank">arxiv</a>.
+				<br>Haoyu Han, Yu Wang, Harry Shomer, Kai Guo, Jiayuan Ding, <b>Yongjia Lei</b>, Mahantesh Halappanavar, Ryan A Rossi, Subhabrata Mukherjee, Xianfeng Tang, Qi He, Zhigang Hua, Bo Long, Tong Zhao, Neil Shah, Amin Javari, Yinglong Xia, Jiliang Tang
+			</li>
 
-				</p>
+			<li>
+				<strong>GNN-fused CapsNet with multi-head prediction for diabetic retinopathy grading</strong> 
+				In <a href="https://www.sciencedirect.com/science/article/abs/pii/S0952197624001520" target="_blank">Engineering Applications of Artificial Intelligence</a>.
+				<br><b>Yongjia Lei</b>, Shuyuan Lin, Zhiying Li, Yachao Zhang, Taotao Lai
+			</li>
 
-				<p>Feel free to reach me at <a href="mailto:yongjia@uoregon.edu">yongjia@uoregon.edu</a>.</p>
-			</div>
-		</div>
+			<li>
+				<strong>BP-CapsNet: An image-based Deep Learning method for medical diagnosis</strong> 
+				In <a href="https://www.sciencedirect.com/science/article/abs/pii/S1568494623007019" target="_blank">Applied Soft Computing</a>.
+				<br><b>Yongjia Lei</b>, Zujian Wu, Zhiying Li, Yuer Yang, Zhongming Liang
+			</li>
+		</ul>
 	</section>
+
+
+	
 		
 	</div>
+
+	<div class="bottom">
+        UO
+    </div>
+
+
 	<script>
 		document.querySelector('.menu-btn').addEventListener
 		('click', () => document.querySelector('.main-menu')
