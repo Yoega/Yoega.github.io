@@ -29,16 +29,20 @@ ul {
 
 /* Nav */
 .main-nav {
+    background-color: #2e681e;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
-    padding: 20px 0;
-    font-size: 13px;
+    height: 80px;
+    width: 100%;
+    padding-left: 30px;
+    font-size: 20px;
+    color: #fff;
 }
 
 .main-nav .logo {
     margin-top: 10px;
+    margin-left: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50%;  /* Makes the logo circular */
@@ -56,17 +60,19 @@ ul {
 
 .main-nav ul li a {
     padding-bottom: 2px;
+    color: #fff;
 }
 
 .main-nav ul li a:hover {
-    border-bottom: 2px solid #b5c0be;
+    border-bottom: 2px solid #ffffff;
 }
 .main-nav ul.main-menu {
     flex: 1;
     margin-left: 20px;
     font-weight: 800;
-    font-size: 18px;
-    color: #dae0e0;
+    font-size: 30px;
+    color: #fcffff;
+    
     
 }
 
@@ -311,13 +317,6 @@ ul {
     }
 }
 
-/* Hide profile when screen width is less than 500px */
-@media screen and (max-width: 1500px) {
-    .fixed-profile {
-        display: none;
-    }
-}
-
 /* Button */
 .showcase .btn {
     margin-top: 20px;
@@ -472,16 +471,20 @@ ul {
 @media (max-width: 500px) {
     .home-cards {
         grid-template-columns: 1fr;
-    };
-     .fixed-profile {
-        display: none;
     }
     
 }
 
+/* Hide profile when screen width is less than 1500px */
+@media screen and (max-width: 1500px) {
+    .fixed-profile {
+        display: none;
+    }
+}
+
 /* News Section */
 .news {
-    background-color: #eaeef1;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     margin-top: 40px;
@@ -491,6 +494,7 @@ ul {
     color: #333;
     margin-bottom: 10px;
     font-size: 30px;
+    
 }
 
 .news p {
@@ -500,6 +504,7 @@ ul {
 
 /* News List */
 .news-list {
+    margin-top: 20px;
     list-style: none;
     padding: 0;
 }
@@ -527,25 +532,43 @@ ul {
     color: #555;
 }
 
-/* About Me Section */
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background: #fafaf8;
-    margin-top: 40px;
-    border-radius: 10px;
-    
+
+/* Title Styling */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
 }
 
-/* Container for Profile and Content */
-.about-container {
-    display: flex;
-    max-width: 900px;
-    gap: 50px;
-    align-items: flex-start;
+/* Subtitle Styling (Light Blue) */
+.subtitle {
+    font-size: 20px;
+    color: #1E90FF; /* Light blue */
+    font-weight: normal;
 }
+
+/* Inline Badge Styling */
+.badge {
+    display: inline-block;
+    background-color: rgb(89, 130, 177);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.highlight {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+
 
 /* Profile Section */
 .profile {
@@ -577,30 +600,33 @@ ul {
 
 .about-links i {
     margin-right: 8px;
-    color: #0078D4;
+    color: #006dd4;
 }
 
 /* About Content */
 .about-content {
     flex: 1;
-    max-width: 600px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
 }
 
 .about-content h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .about-content p {
-    font-size: 16px;
-    line-height: 1.6;
+    
+    line-height: 1.8;
     margin-bottom: 15px;
 }
 
 /* Change hyperlink color inside the About Me section */
 .about-content a {
-    color: #0078D4; /* Change to desired color */
+    color: #020809ae; /* Change to desired color */
     text-decoration: none; /* Optional: Remove underline */
     font-weight: bold; /* Optional: Make it bold */
 }
@@ -609,6 +635,14 @@ ul {
 .about-content a:hover {
     color: #005A9E; /* Darker shade when hovered */
     text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.about-me {
+    padding-top: 20px;
+    background-color: #35720f;
+    padding-left: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 
@@ -620,8 +654,8 @@ html {
 /* Fixed Profile at Top Left */
 .fixed-profile {
     position: fixed;
-    top: 50px;
-    left: 10px;
+    top: 100px;
+    left: 60px;
     width: 220px; /* Adjust as needed */
     padding: 15px;
     background: white;
@@ -661,7 +695,67 @@ html {
     color: #0078D4;
 }
 
-/* Ensure Main Content Doesn't Overlap
-.container {
-    margin-left: 250px; 
-} 
+.bottom {
+    background-color: #2e681e; /* 深紫色 */
+    color: rgba(230, 238, 8, 0.925);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    height: 80px;
+}
+
+
+/* Publications Section */
+.publications {
+    margin: auto;
+    padding: 20px;
+}
+
+/* Publications Title */
+.publications h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Section Separator */
+.publications hr {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Author & Co-Author Title */
+.publications h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* List Styling */
+.publication-list {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px;
+    font-size: 18px;
+    color: #242121c1;
+}
+
+.publication-list li {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Hyperlinks */
+.publication-list a {
+    color: #0d7c84bb;
+    text-decoration: none;
+}
+
+.publication-list a:hover {
+    text-decoration: underline;
+}
+
+/* Highlighting Author Names */
+.publication-list b {
+    font-weight: bold;
+}
