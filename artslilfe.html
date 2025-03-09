@@ -1,32 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arts Life</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yoega's HomePage</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<link rel="stylesheet" href="./css/style.css">
-	<style>
-		.welcome {
-			text-align: center;
-			font-size: 2rem;
-			margin-top: 2rem;
-			margin-bottom: 2rem;
-			font-size: 30px;
-			font-weight: 600;
-			color: darkseagreen;
-		}
+	<!-- Swiper Styles -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-
-	</style>
+	
 </head>
 
 <body>
+    
+	
+	<!-- Swiper Script -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-	<div class="welcome">🥳Welcome to My Colorful World🤩</div>
 
-	<!-- Homw cards 1-->
+	<!-- Menu Button -->
+	<script src="script.js"></script>
+
+
+
+	<!--Nav-->
+	<div class="main-nav">
+		<div class="menu-btn">
+			<i class="fas fa-bars fa-2x"></i>
+		</div>
+		<img src="pics/logo.jpg" alt="Profile" class="logo">
+
+		<ul class="main-menu">
+			<!-- <li><a href="https://scholar.google.com/citations?user=yn0jZg4AAAAJ&hl=zh-CN">Google Scholar</a></li> -->
+			<li><a class="welcome">🥳Welcome to My Colorful World🤩</a></li>
+			<li><a href="Yoega.html">Back</a></li>
+		</ul>
+		
+		<ul class="right-menu">
+			<li>
+				<a href="#" id="comment-icon">
+					<i class="fas fa-comment"></i> Leave a Comment
+				</a>
+			</li>
+			<li>
+				<a href="#" id="heart-icon">
+					<i class="fas fa-heart"></i>
+					<span id="heart-count">0</span>
+				</a>
+			</li>
+		</ul>			
+	</div>
+
+	<!-- Comment Section -->
+	<div id="comment-section">
+		<button id="close-comment">&times;</button> <!-- Close Button -->
+		<textarea id="comment-box" placeholder="Write your comment..."></textarea>
+		<button id="submit-comment">submit</button>
+		<ul id="comment-list"></ul>
+	</div>
+
+
+
+	<div class="container">
+
+
+
+		<!-- Showcase
+		<header class="showcase">
+			<h2></h2>
+			<p>
+				I graduated! 🎉 🎉 🎉
+			</p>
+			<a href="graduation/photo_wall.html" class="btn">
+				see more <i class="fas fa-chevron-right"></i>
+			</a>
+		</header> -->
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- Slide 1 -->
+				<div class="swiper-slide">
+					<div class="slide-content">
+						<h2>🥳🤩😊 Ph.D. life in UO</h2>
+						<p>Another beautiful journey just started.</p>
+					</div>
+					<img src="css/background_pics/school_uo.jpg" alt="">
+				</div>
+		
+				<!-- Slide 2 -->
+				<div class="swiper-slide">
+					<img src="css/background_pics/news_cover.JPEG" alt="">
+					<div class="slide-content">
+						<h2>I graduated! 🎉 🎉 🎉</h2>
+						<p>A wonderful journey in computer science.</p>
+						<a href="graduation/photo_wall.html" class="btn">See more</a>
+					</div>
+				</div>
+
+		
+				<!-- Slide 3 -->
+				<div class="swiper-slide">
+					<div class="slide-content">
+						<h2>Sunrise</h2>
+						<p>A life moment.</p>
+						
+					</div>
+					<img src="css/background_pics/sunrise.jpg" alt="">
+				</div>
+			</div>
+		
+			<!-- Pagination (Dots) -->
+			<div class="swiper-pagination"></div>
+		
+			<!-- Navigation Buttons -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+
 	<section class="home-cards">
 		<div>
 			<img src="pics/profile.jpg" alt="">
@@ -69,6 +160,20 @@
 			<a href="#">Learn More <i class="fas fa-chevron-right"></i></fa-chevron-right></i></a>
 		</div>
 	</section>
-</body>
 
+	
 		
+	</div>
+
+	<div class="bottom">
+        UO
+    </div>
+
+
+	<script>
+		document.querySelector('.menu-btn').addEventListener
+		('click', () => document.querySelector('.main-menu')
+		.classList.toggle('show'))
+	</script>
+</body>
+</html>		
