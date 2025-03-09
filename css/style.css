@@ -626,18 +626,19 @@ ul {
 
 /* Change hyperlink color inside the About Me section */
 .about-content a {
-    color: #020809ae; /* Change to desired color */
+    color: #c5fdffae; /* Change to desired color */
     text-decoration: none; /* Optional: Remove underline */
     font-weight: bold; /* Optional: Make it bold */
 }
 
 /* Change color on hover */
 .about-content a:hover {
-    color: #005A9E; /* Darker shade when hovered */
+    color: #b5dcfb; /* Darker shade when hovered */
     text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 .about-me {
+    margin-top: 20px;
     padding-top: 20px;
     background-color: #35720f;
     padding-left: 20px;
@@ -759,3 +760,15 @@ html {
 .publication-list b {
     font-weight: bold;
 }
+
+.welcome {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: 600;
+    color: darkseagreen;
+    text-align: center;
+}
+
